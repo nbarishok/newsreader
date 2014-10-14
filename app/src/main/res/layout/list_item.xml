@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/padding_small" android:paddingBottom="@dimen/padding_small">
+
+    <!-- launcher img is shown while actual image is loading -->
+    <com.test.news.utilities.CircleNetworkImageView android:id="@+id/iv_network"
+        android:layout_width="@dimen/img_size"
+        android:layout_height="@dimen/img_size" android:src="@drawable/ic_launcher"
+        android:layout_centerHorizontal="true" android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true" android:padding="@dimen/padding_base"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_network">
+        <RelativeLayout android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:paddingLeft="@dimen/padding_very_small">
+            <TextView
+                android:layout_width="@dimen/list_item_part_width"
+                android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/tv_base" android:textSize="12sp"
+                android:id="@+id/tv_time" />
+
+            <TextView android:id="@+id/tv_description"
+                android:layout_width="match_parent" android:gravity="left" android:paddingBottom="@dimen/padding_small"
+                android:layout_height="wrap_content" style="@style/tv_base" android:layout_toLeftOf="@id/tv_time"/>
+
+            </RelativeLayout>
+        <RelativeLayout android:layout_below="@id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content"
+            android:layout_height="@dimen/list_item_part_height" android:id="@+id/iv_read_flag" android:layout_alignParentRight="true"/>
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                style="@style/tv_base" android:id="@+id/tv_author" android:gravity="left" android:paddingBottom="@dimen/padding_very_small" android:layout_toLeftOf="@id/iv_read_flag"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">News</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="copyright">NEWS for Android</string>
+    <string name="connection_error">Во время обработки запроса произошла ошибка</string>
+    <string name="lv_empty_text">список новостей пуст</string>
+    <string name="tv_update_string_base">обновлено в </string>
+    <string name="redir_string_base">Отображение ресурса:\n </string>
+    <string name="tv_loading">загрузка...</string>
+    <string name="processing_now">Дождитесь конца текущего запроса</string>
+    <string name="was_not_updated">не было обновлено</string>
+
+</resources>
