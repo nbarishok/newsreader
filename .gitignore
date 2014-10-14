@@ -7,8 +7,10 @@
 .DS_Store
 /build
 
+
 .git/
 .idea/
 gen/
+app/build/
 
 local.properties
